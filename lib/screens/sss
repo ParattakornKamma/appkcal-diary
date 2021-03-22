@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+
+class Category1 extends StatefulWidget {
+  @override
+  _Category1State createState() => _Category1State();
+}
+
+class _Category1State extends State<Category1> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xff132743),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(25),
+          ),
+        ),
+        toolbarHeight: 140,
+        title: Text('อาหารจานเดียว'),
+        centerTitle: true,
+      ),
+    );
+  }
+}
+
+
+
+.......
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatelessWidget {
+
+  static const routeName = '/home';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Scasd'),
+      ),
+      body: Center(
+        child: Text(
+          'ยินดีต้อนรับ', style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+          ),
+      ),
+    );
+  }
+}
